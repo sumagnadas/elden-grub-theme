@@ -10,7 +10,6 @@ Made it in free time just for my own amusement so might not look good.
 4) Your theme is ready. Now enjoy!
 
 ## TO-DO
-- Make the selected item overlay better
 - Make the text centered if possible
 - Make the terminal look like the settings tab of Elden Ring
 

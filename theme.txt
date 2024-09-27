@@ -3,12 +3,10 @@ title-text: ""
 desktop-image: "background.png"
 desktop-color: "#000000"
 terminal-font: "Unifont Regular 16"
-terminal-box: "terminal_box_*.png"
 terminal-left: "0"
 terminal-top: "0"
 terminal-width: "100%"
 terminal-height: "100%"
-terminal-border: "0"
 
 # Boot menu
 + boot_menu {
@@ -19,10 +17,9 @@ terminal-border: "0"
   
   item_font = "Mantinia Regular 30"
   item_color = "#e0d4b6"
-  item_pixmap_style = "item_*.png"
  
   selected_item_color = "#ffffff"
-  selected_item_pixmap_style = "selected_item_*.png"
+  selected_item_pixmap_style = "select_*.png"
   
   item_height = 40
   item_spacing = 8
@@ -31,22 +28,40 @@ terminal-border: "0"
 # Countdown message
 + label {
   left = 0
-  top = 100%-64
+  top = 100%-68
   width = 100%
   align = "center"
   id = "__timeout__"
   text = "Booting in %d seconds"
-  color = "#777777"
-  font = "Mantinia Regular 16"
+  color = "#999999"
+  font = "Mantinia Regular 18"
 }
 
 # Navigation keys hint
 + label {
   left = 0
-  top = 100%-30
+  top = 100%-38
   width = 100%
   align = "center"
   text = "Use ↑ and ↓ keys to change selection, Enter to confirm"
-  color = "#777777"
-  font = "Mantinia Regular 16"
+  color = "#999999"
+  font = "Mantinia Regular 18"
+}
++ label {
+  left = 0
+  top = 100%-88
+  width = 100%
+  align = "right"
+  text = "E for editing"
+  color = "#999999"
+  font = "Mantinia Regular 18"
+}
++ label {
+  left = 0
+  top = 100%-64
+  width = 100%
+  align = "right"
+  text = "C for command-line"
+  color = "#999999"
+  font = "Mantinia Regular 18"
 }
